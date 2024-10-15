@@ -1,0 +1,26 @@
+extends base.pug
+
+block scripts
+    script(src= "../static/index.js") 
+
+block style 
+    style
+      include ../static/style.css
+      include ../static/stylecontact.css
+
+block content
+
+    .messages
+    each type in Object.keys(messages)
+    each message in messages[type]
+      div(class="alert alert-" + type) #{ message }
+
+    h1 Contact Us 
+    form(action="/contact", method="post", class="myform") 
+        input(type="text", Class="myinput", name="name", placeholder="Enter The Name")
+        input(type="text", Class="myinput", name="email", placeholder="Enter The Email")
+        input(type="text", Class="myinput", name="phone", placeholder="Enter The Phone Number")
+        input(type="text", Class="myinput", name="address", placeholder="Enter The Address")
+        input(type="text", Class="myinput", name="con", placeholder="Enter The Concern")
+        button#btn Submit Now
+    

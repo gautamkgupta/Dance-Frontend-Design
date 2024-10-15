@@ -1,0 +1,51 @@
+extends base.pug
+
+block scripts
+    script(src= "../static/index.js") 
+
+block style 
+    style
+      include ../static/style.css
+    style
+      <link rel="stylesheet" media="screen and (max-width: 1148px)" href="../static/respnsive.css">
+
+block content
+    
+    section#introsection
+          div.text1 Welcome to Gautam Dance Academy  
+          div.text2 Eat Dance Sleep Repeat
+
+    section#missionsection
+          h2 Our Mission
+          .card 
+            h3 Dance perfection 
+            .card-box 
+              .card-img 
+                img(src="./static/img/img.jpg")
+              .card-content 
+                p This is a best Dance Academy  in Universe.    
+          .card 
+            h3 Dance the way you like
+            .card-box 
+              .card-img 
+                img(src="./static/img/img1.png")
+              .card-content 
+                p This is a best Dance Academy in Universe.
+          .card
+            h3 Dance teaching
+            .card-box 
+              .card-img 
+                img(src="./static/img/img2.png")
+              .card-content 
+                p This is a best Dance Academy in Universe.  
+
+    section#sponsarsection
+          h2 Our Sponsars
+          #sponsar 
+            img(src="./static/img/logo1.png", alt="Sponsar Image" Class="si")
+            img(src="./static/img/logo2.jpg", alt="Sponsar Image" Class="si")
+            img(src="./static/img/logo3.png", alt="Sponsar Image" Class="si")
+            img(src="./static/img/logo4.jpg", alt="Sponsar Image" Class="si")
+            img(src="./static/img/logo5.jpg", alt="Sponsar Image" Class="si")
+
+

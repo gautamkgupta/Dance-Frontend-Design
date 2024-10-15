@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    background: url(./static/img/contact.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+h1{
+    text-align: center;
+    margin: 16px 0;
+}
+
+.myform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+}
+
+.myinput{
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 10px;
+    width: 50vw;
+    font-size: 16px;
+    outline: none;
+}
+
+#btn{
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 150px;
+    height: 45px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+#btn:hover{
+    background-color: blue;
+    color: black;
+}

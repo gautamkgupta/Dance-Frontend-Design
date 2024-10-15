@@ -1,0 +1,63 @@
+doctype html
+html
+  head
+    title Gautam Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+      ul 
+        #logo 
+          img(src="./static/img/logo.png")
+          .name  GDA 
+        li #[a(href="/home") Home]
+        li #[a(href="/") About]
+        li #[a(href="/") Services] 
+        li #[a(href="/") Class]
+        li #[a(href="/") Contact Us]
+
+    section#introsection
+          div.text1 Welcome to Gautam Dance Academy  
+          div.text2 Eat Dance Sleep Repeat
+
+    section#missionsection
+          h2 Our Mission
+          .card 
+            h3 Dance perfection 
+            .card-box 
+              .card-img 
+                img(src="./static/img/img.jpg")
+              .card-content 
+                p This is a best Dance Academy  in Universe.    
+          .card 
+            h3 Dance the way you like
+            .card-box 
+              .card-img 
+                img(src="./static/img/img1.png")
+              .card-content 
+                p This is a best Dance Academy in Universe.
+          .card
+            h3 Dance teaching
+            .card-box 
+              .card-img 
+                img(src="./static/img/img2.png")
+              .card-content 
+                p This is a best Dance Academy in Universe.  
+
+    section#sponsarsection
+          h2 Our Sponsars
+          #sponsar 
+            img(src="./static/img/logo1.png", alt="Sponsar Image" Class="si")
+            img(src="./static/img/logo2.jpg", alt="Sponsar Image" Class="si")
+            img(src="./static/img/logo3.png", alt="Sponsar Image" Class="si")
+            img(src="./static/img/logo4.jpg", alt="Sponsar Image" Class="si")
+            img(src="./static/img/logo5.jpg", alt="Sponsar Image" Class="si")
+
+   
+    footer#footer  
+             Gautam Dance Academy
+             copyright © 2020 GautamDanceAcademy.com
+
+
+    script
+      include ../static/index.js
